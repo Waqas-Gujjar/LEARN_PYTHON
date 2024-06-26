@@ -68,7 +68,7 @@ print(text.capitalize())  # Output: "Hello world"
 Description: Converts the string to lowercase in a more aggressive manner than lower(), suitable for case-insensitive comparisons.
 
 ```python
-Copy code
+
 text = "HELLO WORLD"
 print(text.casefold())  # Output: "hello world"
 
@@ -77,7 +77,7 @@ print(text.casefold())  # Output: "hello world"
 Description: Centers the string in a field of specified width, padding it with a specified character (default is space).
 
 ```python
-Copy code
+
 text = "hello"
 print(text.center(10, '*'))  # Output: "**hello***"
 ```
@@ -86,7 +86,7 @@ print(text.center(10, '*'))  # Output: "**hello***"
 Description: Counts the non-overlapping occurrences of a substring within the string.
 
 ```python
-Copy code
+
 text = "banana"
 print(text.count("a"))  # Output: 3
 ```
@@ -95,7 +95,7 @@ print(text.count("a"))  # Output: 3
  Description: Encodes the string using the specified encoding.
 
 ```python
-Copy code
+
 text = "hello"
 encoded_text = text.encode()
 print(encoded_text)  # Output: b'hello'
@@ -105,7 +105,7 @@ print(encoded_text)  # Output: b'hello'
 Description: Checks if the string ends with the specified suffix.
 
 ```python
-Copy code
+
 text = "python.py"
 print(text.endswith(".py"))  # Output: True
 ```
@@ -113,7 +113,7 @@ print(text.endswith(".py"))  # Output: True
 Description: Expands tabs in the string to multiple spaces. The default tab size is 8.
 
 ```python
-Copy code
+
 text = "Hello\tWorld"
 print(text.expandtabs(4))  # Output: "Hello   World"
 ```
@@ -121,7 +121,7 @@ print(text.expandtabs(4))  # Output: "Hello   World"
 Description: Returns the lowest index in the string where the substring is found. Returns -1 if not found.
 
 ```python
-Copy code
+
 text = "hello world"
 print(text.find("lo"))  # Output: 3
 print(text.find("z"))   # Output: -1
@@ -130,7 +130,7 @@ print(text.find("z"))   # Output: -1
 Description: Formats the string using the specified arguments.
 
 ```python
-Copy code
+
 template = "Hello, {}!"
 print(template.format("Alice"))  # Output: "Hello, Alice!"
 ```
@@ -139,7 +139,7 @@ Description: Similar to str.format(), but takes a single dictionary argument for
 
 
 ```python
-Copy code
+
 template = "Hello, {name}!"
 print(template.format_map({"name": "Alice"}))  # Output: "Hello, Alice!"
 
@@ -149,7 +149,7 @@ Description: Similar to find(), but raises a ValueError if the substring is not 
 
 
 ```python
-Copy code
+
 text = "hello world"
 print(text.index("lo"))  # Output: 3
 # print(text.index("z"))  # Raises ValueError
@@ -159,7 +159,7 @@ print(text.index("lo"))  # Output: 3
 Description: Checks if all characters in the string are alphanumeric.
 
 ```python
-Copy code
+
 text = "Hello123"
 print(text.isalnum())  # Output: True
 
@@ -170,7 +170,7 @@ print(text.isalnum())  # Output: False (space is not alphanumeric)
 Description: Checks if all characters in the string are alphabetic.
 
 ```python
-Copy code
+
 text = "Hello"
 print(text.isalpha())  # Output: True
 
@@ -180,132 +180,147 @@ print(text.isalpha())  # Output: False (contains digits)
 ## isascii()
 Description: Checks if all characters in the string are ASCII.
 
-python
-Copy code
+```python
+
 text = "Hello"
 print(text.isascii())  # Output: True
 
 text = "你好"
 print(text.isascii())  # Output: False (contains non-ASCII characters)
-isdecimal()
+```
+## isdecimal()
 Description: Checks if all characters in the string are decimal characters.
 
-python
-Copy code
+```python
+
 text = "12345"
 print(text.isdecimal())  # Output: True
 
 text = "12345.67"
 print(text.isdecimal())  # Output: False (contains a dot)
-isdigit()
+```
+## isdigit()
 Description: Checks if all characters in the string are digits.
 
-python
-Copy code
+```python
+
 text = "12345"
 print(text.isdigit())  # Output: True
 
 text = "12345.67"
 print(text.isdigit())  # Output: False (contains a dot)
-isidentifier()
+```
+## isidentifier()
 Description: Checks if the string is a valid identifier according to Python's rules.
 
-python
-Copy code
+```python
+
 text = "hello_world"
 print(text.isidentifier())  # Output: True
 
 text = "123hello"
 print(text.isidentifier())  # Output: False (starts with a digit)
-islower()
+```
+
+## islower()
 Description: Checks if all characters in the string are lowercase.
 
-python
-Copy code
+```python
+
 text = "hello"
 print(text.islower())  # Output: True
 
 text = "Hello"
 print(text.islower())  # Output: False (contains an uppercase letter)
-isnumeric()
+```
+## isnumeric()
 Description: Checks if all characters in the string are numeric.
 
-python
-Copy code
+```python
+
 text = "12345"
 print(text.isnumeric())  # Output: True
 
 text = "Ⅷ"  # Roman numeral for 8
 print(text.isnumeric())  # Output: True
-isprintable()
+```
+## isprintable()
 Description: Checks if all characters in the string are printable.
 
-python
-Copy code
+```python
+
 text = "Hello, World!"
 print(text.isprintable())  # Output: True
 
 text = "Hello\nWorld"
 print(text.isprintable())  # Output: False (contains a newline)
-isspace()
+```
+
+## isspace()
 Description: Checks if all characters in the string are whitespace.
 
-python
-Copy code
+```python
+
 text = "   "
 print(text.isspace())  # Output: True
 
 text = "Hello"
+
 print(text.isspace())  # Output: False
-istitle()
+```
+## istitle()
 Description: Checks if the string is titlecased.
 
-python
-Copy code
+```python
+
 text = "Hello World"
 print(text.istitle())  # Output: True
 
 text = "Hello world"
 print(text.istitle())  # Output: False (second word is not capitalized)
-isupper()
+```
+## isupper()
 Description: Checks if all characters in the string are uppercase.
 
-python
-Copy code
+```python
 text = "HELLO"
 print(text.isupper())  # Output: True
 
 text = "Hello"
 print(text.isupper())  # Output: False (contains a lowercase letter)
-join()
+```
+## join()
 Description: Joins elements of an iterable into a single string, with the string acting as a separator.
 
-python
-Copy code
+```python
+
 words = ["Hello", "world"]
 print(" ".join(words))  # Output: "Hello world"
 
 numbers = ["1", "2", "3"]
 print("-".join(numbers))  # Output: "1-2-3"
-ljust()
+```
+## ljust()
 Description: Left-justifies the string in a field of the specified width, padding it with a specified character (default is space).
 
-python
-Copy code
+```python
+
 text = "hello"
 print(text.ljust(10, '*'))  # Output: "hello*****"
-lower()
+```
+## lower()
 Description: Converts all characters in the string to lowercase.
 
-python
-Copy code
+```python
+
 text = "HELLO WORLD"
 print(text.lower())  # Output: "hello world"
-lstrip()
+```
+ ## lstrip()
 Description: Removes leading characters (space is the default) from the string.
 
 python
-Copy code
+
 text = "   hello   "
 print(text.lstrip())  # Output: "hello   "
 
