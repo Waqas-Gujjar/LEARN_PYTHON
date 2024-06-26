@@ -319,174 +319,198 @@ print(text.lower())  # Output: "hello world"
  ## lstrip()
 Description: Removes leading characters (space is the default) from the string.
 
-python
+```python
 
 text = "   hello   "
 print(text.lstrip())  # Output: "hello   "
 
 text = "---hello---"
 print(text.lstrip('-'))  # Output: "hello---"
-maketrans()
+ ```
+ ## maketrans()
 Description: Returns a translation table used by the translate() method.
 
-python
-Copy code
+```python
+
 intab = "aeiou"
 outtab = "12345"
 trantab = str.maketrans(intab, outtab)
 
 text = "hello world"
 print(text.translate(trantab))  # Output: "h2ll4 w4rld"
+```
 partition()
 Description: Splits the string into a tuple (head, sep, tail) at the first occurrence of sep.
 
-python
-Copy code
+```python
+
 text = "hello world"
 print(text.partition(" "))  # Output: ('hello', ' ', 'world')
-replace()
+```
+## replace()
 Description: Replaces occurrences of a substring with another substring.
 
-python
-Copy code
+```python
+
 text = "hello world"
 print(text.replace("world", "Python"))  # Output: "hello Python"
-rfind()
+```
+## rfind()
 Description: Returns the highest index in the string where the substring is found. Returns -1 if not found.
 
-python
-Copy code
+```python
+
 text = "hello world"
 print(text.rfind("lo"))  # Output: 3
 print(text.rfind("z"))   # Output: -1
-rindex()
+```
+## rindex()
 Description: Similar to rfind(), but raises a ValueError if the substring is not found.
 
-python
-Copy code
+```python
+
 text = "hello world"
 print(text.rindex("lo"))  # Output: 3
 # print(text.rindex("z"))  # Raises ValueError
-rjust()
+```
+## rjust()
 Description: Right-justifies the string in a field of the specified width, padding it with a specified character (default is space).
 
-python
-Copy code
+```python
+
 text = "hello"
 print(text.rjust(10, '-'))  # Output: "-----hello"
-rpartition()
+```
+## rpartition()
 Description: Splits the string into a tuple (head, sep, tail) at the last occurrence of sep.
 
-python
-Copy code
+```python
+
 text = "hello world"
 print(text.rpartition(" "))  # Output: ('hello', ' ', 'world')
-rsplit()
+```
+## rsplit()
 Description: Splits the string into a list using the specified separator, starting from the end.
 
-python
-Copy code
+```python
+
 text = "apple,banana,cherry"
 print(text.rsplit(','))  # Output: ['apple', 'banana', 'cherry']
-rstrip()
+```
+## rstrip()
 Description: Removes trailing characters (space is the default) from the string.
 
-python
-Copy code
+```python
+
 text = "   hello   "
 print(text.rstrip())  # Output: "   hello"
 
 text = "---hello---"
 print(text.rstrip('-'))  # Output: "---hello"
-split()
+```
+## split()
 Description: Splits the string into a list using the specified separator.
 
-python
-Copy code
+```python
+
 text = "apple,banana,cherry"
 print(text.split(','))  # Output: ['apple', 'banana', 'cherry']
 
 text = "The quick brown fox"
 print(text.split())  # Output: ['The', 'quick', 'brown', 'fox']
-splitlines()
+```
+## splitlines()
 Description: Splits the string at line breaks into a list.
 
-python
-Copy code
+```python
+
 text = "hello\nworld"
 print(text.splitlines())  # Output: ['hello', 'world']
 
 text = "hello\nworld\n"
 print(text.splitlines(True))  # Output: ['hello\n', 'world\n']
-startswith()
+```
+## startswith()
 Description: Checks if the string starts with the specified prefix.
 
-python
-Copy code
+```python
+
 text = "hello world"
 print(text.startswith("hello"))  # Output: True
 
 print(text.startswith("world"))  # Output: False
-strip()
+```
+## strip()
 Description: Removes leading and trailing characters (space is the default) from the string.
 
-python
-Copy code
+```python
+
 text = "   hello world   "
 print(text.strip())  # Output: "hello world"
 
 text = "---hello---"
 print(text.strip('-'))  # Output: "hello"
-swapcase()
+```
+## swapcase()
 Description: Swaps case of all characters in the string.
 
-python
-Copy code
+```python
+
 text = "Hello World"
 print(text.swapcase())  # Output: "hELLO wORLD"
-title()
+```
+## title()
 Description: Converts the first character of each word to uppercase and the rest to lowercase.
 
-python
-Copy code
+```python
+
+
 text = "hello world"
 print(text.title())  # Output: "Hello World"
-translate()
+```
+## translate()
 Description: Translates the string using a translation table created by str.maketrans().
 
-python
-Copy code
+```python
+
 intab = "aeiou"
 outtab = "12345"
 trantab = str.maketrans(intab, outtab)
 
 text = "hello world"
 print(text.translate(trantab))  # Output: "h2ll4 w4rld"
-upper()
+```
+## upper()
 Description: Converts all characters in the string to uppercase.
 
-python
-Copy code
+```python
+
 text = "hello world"
 print(text.upper())  # Output: "HELLO WORLD"
-zfill()
+```
+## zfill()
 Description: Pads the string with zeros on the left to fill a specified width.
 
-python
-Copy code
+```python
+
 text = "42"
 print(text.zfill(5))  # Output: "00042"
-removeprefix()
+```
+## removeprefix()
 Description: Removes the specified prefix from the string if it exists.
 
-python
-Copy code
+
+```python
+
 text = "HelloWorld"
 print(text.removeprefix("Hello"))  # Output: "World"
-removesuffix()
+```
+
+## removesuffix()
 Description: Removes the specified suffix from the string if it exists.
 
-python
-Copy code
+```python
+
 text = "HelloWorld"
 print(text.removesuffix("World"))  # Output: "Hello"
+```
