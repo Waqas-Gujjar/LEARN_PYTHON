@@ -53,7 +53,7 @@ This document provides an overview of Python's string methods, complete with exa
 47. [removesuffix()](#removesuffix())
 
 
-## capitalize()
+1. ## capitalize()
 Description: Converts the first character to uppercase and the rest to lowercase.
 
 ```Python
