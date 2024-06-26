@@ -4,7 +4,7 @@ This document provides an overview of Python's string methods, complete with exa
 
 ## Table of Contents.
 
-1.  [capitalize()](#capitalize())
+1.  [capitalize()](#1-capitalize())
 2.  [casefold()](#casefold())
 3.  [center()](#center())
 4.  [count()](#count())
@@ -53,7 +53,7 @@ This document provides an overview of Python's string methods, complete with exa
 47. [removesuffix()](#removesuffix())
 
 
-1. ## capitalize()
+ ## capitalize()
 Description: Converts the first character to uppercase and the rest to lowercase.
 
 ```Python
