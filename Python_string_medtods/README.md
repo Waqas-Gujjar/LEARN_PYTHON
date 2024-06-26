@@ -169,14 +169,15 @@ print(text.isalnum())  # Output: False (space is not alphanumeric)
 ## isalpha()
 Description: Checks if all characters in the string are alphabetic.
 
-python
+```python
 Copy code
 text = "Hello"
 print(text.isalpha())  # Output: True
 
 text = "Hello123"
 print(text.isalpha())  # Output: False (contains digits)
-isascii()
+```
+## isascii()
 Description: Checks if all characters in the string are ASCII.
 
 python
