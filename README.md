@@ -64,5 +64,5 @@ Python’s combination of simplicity, power, and versatility has made it one of 
 ## Example :
 
 ```python
- print(Welcome to python would)
+ print('Welcome to python would')
 ```
