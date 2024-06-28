@@ -106,3 +106,37 @@ b = 10
 a, b = b, a
 print("After swapping, a:", a, "b:", b)
 ```
+
+# Common Methods and Functions Associated with Variables
+Depending on the type of the value stored in the variable, different methods and functions can be used. Here are some examples for common types:
+
+## 1. For Strings
+```python
+
+name = "Alice"
+print(name.upper())   # 'ALICE'
+print(name.lower())   # 'alice'
+print(name.replace('A', 'O'))  # 'Olice'
+print(len(name))      # 5 (length of the string)
+```
+## 2. For Lists
+```python
+
+numbers = [1, 2, 3, 4, 5]
+numbers.append(6)     # Adds 6 to the end of the list
+print(numbers)        # [1, 2, 3, 4, 5, 6]
+numbers.pop()         # Removes and returns the last item
+print(numbers)        # [1, 2, 3, 4, 5]
+print(len(numbers))   # 5 (length of the list)
+```
+## 3. For Dictionaries
+```python
+
+person = {"name": "Alice", "age": 25}
+print(person.keys())   # dict_keys(['name', 'age'])
+print(person.values()) # dict_values(['Alice', 25])
+print(person.get("name"))  # 'Alice'
+person.update({"height": 5.6})  # Add a new key-value pair
+print(person)  # {'name': 'Alice', 'age': 25, 'height': 5.6}
+```
+Understanding and utilizing variables effectively is fundamental to programming in Python. They allow you to store and manipulate data, making your code flexible and dynamic.
