@@ -4,7 +4,7 @@ This document provides an overview of Python's string methods, complete with exa
 
 ## Table of Contents.
 
-1.  [capitalize()](#1-capitalize())
+1.  [capitalize()](#1capitalize())
 2.  [casefold()](#casefold())
 3.  [center()](#center())
 4.  [count()](#count())
