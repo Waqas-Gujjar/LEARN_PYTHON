@@ -145,6 +145,25 @@ Understanding and utilizing variables effectively is fundamental to programming 
 
 Test your understanding of variables in Python with these practice questions, categorized by difficulty levels.
 
+## QUESTIONS
+
+## Beginner Level
+1. Assign the value 42 to a variable named `answer`.
+2. Assign the value `"Python"` to a variable `language` and the value `3.14` to a variable `pi`.
+3. Create variables `name` with the value `"Alice"` and `age` with the value `30`. Print them in the format: `Name: Alice, Age: 30`.
+4. Assign the values `5`, `10`, and `15` to the variables `x`, `y`, and `z` respectively in one line.
+5. Create a variable `message` with the value `"Hello, World!"`. Use Python to check the type of the variable.
+
+## Intermediate Level
+1. Given two variables `a = 100` and `b = 200`, swap their values.
+2. Create a variable `count` with the value `5`. Increment its value by `10` and print the result.
+3. Create a list `numbers` with values `[1, 2, 3, 4, 5]`. Append the value `6` to the list and print the updated list.
+4. Create a variable `text` with the value `"hello world"`. Convert it to uppercase and print the result.
+5. Create a dictionary `student` with keys `name` and `grade`, and values `"Bob"` and `85` respectively. Add a new key `age` with the value `21`.
+
+
+
+
 ## Beginner Level
 
 1. **Simple Assignment**
@@ -232,59 +251,6 @@ Test your understanding of variables in Python with these practice questions, ca
      print(student)  # Output: {'name': 'Bob', 'grade': 85, 'age': 21}
      ```
 
-## Advanced Level
 
-1. **Variable Assignment in Loops**
-   - Write a loop that iterates through a list `['a', 'b', 'c']` and assigns each element to a variable `letter`. Print `letter` on each iteration.
-   - **Code:**
-     ```python
-     for letter in ['a', 'b', 'c']:
-         print(letter)
-     ```
-
-2. **Chaining Assignments**
-   - Assign the value `100` to three variables `x`, `y`, and `z` in a single line of code.
-   - **Code:**
-     ```python
-     x = y = z = 100
-     ```
-
-3. **Conditional Assignment**
-   - Create a variable `status` and assign it the value `"adult"` if `age` is greater than or equal to 18; otherwise, assign it `"minor"`. Assume `age` is a variable with some integer value.
-   - **Code:**
-     ```python
-     age = 20
-     status = "adult" if age >= 18 else "minor"
-     print(status)  # Output: "adult"
-     ```
-
-4. **Using `isinstance()`**
-   - Write a function `check_type` that takes a variable and returns whether it's a string, integer, or float.
-   - **Code:**
-     ```python
-     def check_type(var):
-         if isinstance(var, str):
-             return "String"
-         elif isinstance(var, int):
-             return "Integer"
-         elif isinstance(var, float):
-             return "Float"
-         else:
-             return "Other"
-
-     print(check_type("Hello"))  # Output: "String"
-     print(check_type(123))      # Output: "Integer"
-     print(check_type(4.56))     # Output: "Float"
-     ```
-
-5. **Complex Dictionary Manipulation**
-   - Given a dictionary `data = {"a": 1, "b": 2, "c": 3}`, write a Python code to increment the value of each key by `1`.
-   - **Code:**
-     ```python
-     data = {"a": 1, "b": 2, "c": 3}
-     for key in data:
-         data[key] += 1
-     print(data)  # Output: {'a': 2, 'b': 3, 'c': 4}
-     ```
 
 Use these questions to practice and solidify your understanding of how to work with variables in Python at different levels of difficulty.
